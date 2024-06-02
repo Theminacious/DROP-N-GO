@@ -15,21 +15,6 @@ const Header = () => {
       active: true,
     },
     {
-      name: "Track Package",
-      slug: "/track",
-      active: false,
-    },
-    {
-      name: "Services",
-      slug: "/services",
-      active: false,
-    },
-    {
-      name: "Pricing",
-      slug: "/pricing",
-      active: false,
-    },
-    {
       name: "About Us",
       slug: "/about",
       active: false,
@@ -58,7 +43,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="py-3 shadow bg-black">
+    <header className="py-3 shadow bg-white">
       <Container>
         <nav className="flex">
           <div className="mr-4">
@@ -71,7 +56,7 @@ const Header = () => {
               item.active ? (
                 <li key={item.name}>
                   <button
-                  className="inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
+                  className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
                    onClick={() => navigate(item.slug)}>
                     {item.name}
                   </button>
